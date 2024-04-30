@@ -42,10 +42,10 @@ jobs:
       
     - name: run file
       run: |
-        python3 pyBillboardChart.py
-        python3 pyBugsChart.py
-        python3 pyMelonChart.py
-        python3 pyAppleChart.py
+        python pyBillboardChart.py
+        python pyBugsChart.py
+        python pyMelonChart.py
+        python pyAppleChart.py
 
     - name: commits
       run : |
