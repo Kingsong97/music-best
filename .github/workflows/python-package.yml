@@ -42,17 +42,19 @@ jobs:
       
     - name: run file
       run: |
-        python pyBillboardChart.py
-        python pyBugsChart.py
-        python pyMelonChart.py
+        python3 pyBillboardChart.py
+        python3 pyBugsChart.py
+        python3 pyMelonChart.py
+        python3 pyAppleChart.py
 
     - name: commits
       run : |
-        git config --global user.email "kingsongsm97@gmail.com"
-        git config --global user.name "kingsong97"
+        git config --global user.email "webstupids@gmail.com"
+        git config --global user.name "webstoryboy" 
         git add billboard/billboard100_*.json
         git add bugs/bugs100_*.json
         git add melon/melon100_*.json
+        git add apple/apple100_*.json
         git commit -m "차트 수집 완료"
 
     - name: push
@@ -60,18 +62,7 @@ jobs:
       with:
         branch: "main"
         github_token: $
-      
-
-
-
-
-
-
-
-
-
-
-
+    
 
 
 
